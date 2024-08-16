@@ -4,7 +4,10 @@ import { montserrat } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Dogbook",
+  title: {
+    template: "%s | Dogbook",
+    default: "Dogbook",
+  },
   description: "The place where dogs and dog owners meet",
 };
 
