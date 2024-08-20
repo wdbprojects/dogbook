@@ -29,3 +29,9 @@ export const loginSchema = z.object({
 });
 
 export type LoginValues = z.infer<typeof loginSchema>;
+
+export const postSchema = z.object({
+  content: z.string().trim().min(1, { message: "Username is required" }),
+});
+
+export type PostValues = z.infer<typeof postSchema>;
